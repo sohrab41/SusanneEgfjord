@@ -35,30 +35,50 @@
   <!-----------------> 
   <!-- Page1 Header-->
   <!-----------------> 
-  <div data-role="header" data-position="fixed" >
-    <h1>Welcome To My Homepage</h1>
+  <div data-role="header" data-position="fixed" style="float:left;">
+    <h1>Welcome To Galleri</h1>
   </div>
   <!---------------> 
   <!-- Page1 Main-->
   <!---------------> 
   <div data-role="main" class="ui-content" >
-    <ul data-role="listview" style="background-color:blue; " >
+    <ul data-role="listview" style="" >
+	<li data-role="list-divider">New</li>	
       <li id="page1Image1Li" >
-		   <a href="#page2" data-transition="slide" style="background-color:blue; position:relative; ">
-			<img id="page1Image1" src="http://dianick.dk/images/1.jpg" alt="alt1" style="width:40px;height:40px;  position:relative; float:left;  padding: 0px 10px 0px 0px;"></img>  
-			<h1  id="page1Image1LiH1"> This is what you get</h1>
+		   <a href="#page2" data-transition="slide" style="height:30px;">
+			<img id="page1Image1" src="http://dianick.dk/images/1.jpg" alt="alt1" style="width:40px;height:40px;"></img>  
+			<h1  id="page1Image1LiH1"> Acryl paa laerred 50 x 100 cm</h1>
 		   </a>
       </li>
       <li>
-		   <a href="#page3" data-transition="slide" style="background-color:blue; position:relative; ">
+		   <a href="#page3" data-transition="slide" style="position:relative; ">
 			<img id="page1Image1" src="http://dianick.dk/images/gallery/exADSC_0337xx.jpg" alt="alt1" style="width:40px;height:40px;  position:relative; float:left;  padding: 0px 10px 0px 0px;"></img>  
-			<h1  id="page1Image1LiH1"> This is what you get</h1>
+			<h1  id="page1Image1LiH1"> Acryl paa laerred 60 x 100 cm</h1>
+		   </a>
+      </li>
+      <li data-role="list-divider">previous</li>	
+      <li>
+		   <a href="#page4" data-transition="slide" style="position:relative; ">
+			<img id="page1Image1" src="http://dianick.dk/images/gallery/ADSC00629xxxx.jpg" alt="alt1" style="width:40px;height:40px;  position:relative; float:left;  padding: 0px 10px 0px 0px;"></img>  
+			<h1  id="page1Image1LiH1">Acryl paa laerred 70 x 100 cm</h1>
 		   </a>
       </li>
       <li>
-		   <a href="#page4" data-transition="slide" style="background-color:blue; position:relative; ">
-			<img id="page1Image1" src="http://dianick.dk/images/gallery/ADSC00629xxxx.jpg" alt="alt1" style="width:40px;height:40px;  position:relative; float:left;  padding: 0px 10px 0px 0px;"></img>  
-			<h1  id="page1Image1LiH1"> This is what you get</h1>
+		   <a href="#page5" data-transition="slide" style="position:relative; ">
+			<img id="page1Image1" src="http://dianick.dk/images/gallery/paint-1.jpg" alt="alt1" style="width:40px;height:40px;  position:relative; float:left;  padding: 0px 10px 0px 0px;"></img>  
+			<h1  id="page1Image1LiH1">Acryl paa laerred 80 x 100 cm</h1>
+		   </a>
+      </li>
+      <li>
+		   <a href="#page6" data-transition="slide" style="position:relative; ">
+			<img id="page1Image1" src="http://dianick.dk/images/gallery/paint_22.jpeg" alt="alt1" style="width:40px;height:40px;  position:relative; float:left;  padding: 0px 10px 0px 0px;"></img>  
+			<h1  id="page1Image1LiH1">Acryl paa laerred 80 x 100 cm</h1>
+		   </a>
+      </li>
+      <li>
+		   <a href="#page7" data-transition="slide" style="position:relative; ">
+			<img id="page1Image1" src="http://dianick.dk/images/gallery/pictureOfGirl.jpeg" alt="alt1" style="width:40px;height:40px;  position:relative; float:left;  padding: 0px 10px 0px 0px;"></img>  
+			<h1  id="page1Image1LiH1">Acryl paa laerred 80 x 100 cm</h1>
 		   </a>
       </li>
     </ul>
@@ -87,14 +107,12 @@
     <h1>Welcome To Page2</h1>
     <!--a href="#page1"  data-icon="grid"  data-iconpos="notext"  >Contact</a-->
   </div>
-
   <!---------------> 
   <!-- Page2 Main-->
   <!---------------> 
   <div data-role="main" class="ui-content">
    <img src="http://dianick.dk/images/3.jpg" class="fullscreen" alt="page2"></img>
   </div>
-
   <!-----------------> 
   <!-- Page2 Fotter-->
   <!-----------------> 
@@ -120,14 +138,12 @@
     <h1>Welcome To Page3</h1>
     <!--a href="#page1"  data-icon="grid"  data-iconpos="notext"  >Contact</a-->
   </div>
-
   <!---------------> 
   <!-- Page3 Main-->
   <!---------------> 
   <div data-role="main" class="ui-content">
    <img src="http://dianick.dk/images/gallery/exADSC_0337xx.jpg" class="fullscreen" alt="Page3"></img>
   </div>
-
   <!-----------------> 
   <!-- Page3 Fotter-->
   <!-----------------> 
@@ -164,6 +180,108 @@
 
   <!-----------------> 
   <!-- Page4 Fotter-->
+  <!-----------------> 
+  <div data-role="footer"  data-position="fixed" style="">
+      <nav data-role="navbar">
+		  <!--data-icon  http://demos.jquerymobile.com/1.2.0/docs/buttons/buttons-icons.html -->
+		  <ul>
+			<li><a href="#page1"  data-icon="home">Home</a></li>
+			<li><a href="#newsPage"  data-icon="comment">NEWS</a></li>
+			<li><a href="#"   data-icon="user">Contact</a></li>
+		  </ul>
+	</nav> 
+  </div>
+</div> 
+
+ <!------------------------------------------------------------------> 
+  <!--  Page5  -- Page5  -- Page5  -- Page5  -- Page5  -- Page5  -- -->
+  <!------------------------------------------------------------------> 
+  <div data-role="page" id="page5">
+  <!-----------------> 
+  <!-- Page1 header-->
+  <!-----------------> 
+  <div data-role="header">
+    <h1>Welcome To Page5</h1>
+    <!--a href="#page1"  data-icon="grid"  data-iconpos="notext"  >Contact</a-->
+  </div>
+
+  <!---------------> 
+  <!-- Page5 Main-->
+  <!---------------> 
+  <div data-role="main" class="ui-content">
+   <img src="http://dianick.dk/images/gallery/paint-1.jpg" class="fullscreen" alt="Pagep"></img>
+  </div>
+
+  <!-----------------> 
+  <!-- Page5 Fotter-->
+  <!-----------------> 
+  <div data-role="footer"  data-position="fixed" style="">
+      <nav data-role="navbar">
+		  <!--data-icon  http://demos.jquerymobile.com/1.2.0/docs/buttons/buttons-icons.html -->
+		  <ul>
+			<li><a href="#page1"  data-icon="home">Home</a></li>
+			<li><a href="#newsPage"  data-icon="comment">NEWS</a></li>
+			<li><a href="#"   data-icon="user">Contact</a></li>
+		  </ul>
+	</nav> 
+  </div>
+</div> 
+
+  <!------------------------------------------------------------------> 
+  <!--  Page6  -- Page6  -- Page6  -- Page6  -- Page6  -- Page6  -- -->
+  <!------------------------------------------------------------------> 
+  <div data-role="page" id="page6">
+  <!-----------------> 
+  <!-- Page1 header-->
+  <!-----------------> 
+  <div data-role="header">
+    <h1>Welcome To Page6</h1>
+    <!--a href="#page1"  data-icon="grid"  data-iconpos="notext"  >Contact</a-->
+  </div>
+
+  <!---------------> 
+  <!-- Page6 Main-->
+  <!---------------> 
+  <div data-role="main" class="ui-content">
+   <img src="http://dianick.dk/images/gallery/paint_22.jpeg" class="fullscreen" alt="page6"></img>
+  </div>
+
+  <!-----------------> 
+  <!-- Page6 Fotter-->
+  <!-----------------> 
+  <div data-role="footer"  data-position="fixed" style="">
+      <nav data-role="navbar">
+		  <!--data-icon  http://demos.jquerymobile.com/1.2.0/docs/buttons/buttons-icons.html -->
+		  <ul>
+			<li><a href="#page1"  data-icon="home">Home</a></li>
+			<li><a href="#newsPage"  data-icon="comment">NEWS</a></li>
+			<li><a href="#"   data-icon="user">Contact</a></li>
+		  </ul>
+	</nav> 
+  </div>
+</div> 
+
+  <!------------------------------------------------------------------> 
+  <!--  Page7  -- Page7  -- Page7  -- Page7  -- Page7  -- Page7  -- -->
+  <!------------------------------------------------------------------> 
+  <div data-role="page" id="page7">
+  <!-----------------> 
+  <!-- Page1 header-->
+  <!-----------------> 
+  <div data-role="header">
+    <h1>Welcome To Page7</h1>
+    <!--a href="#page1"  data-icon="grid"  data-iconpos="notext"  >Contact</a-->
+  </div>
+
+  <!---------------> 
+  <!-- Page7 Main-->
+  <!---------------> 
+  <div data-role="main" class="ui-content">
+   <img src="http://dianick.dk/images/gallery/pictureOfGirl.jpeg" class="fullscreen" alt="page7"></img>
+  </div>
+
+  <!-----------------> 
+  <!-- Page7 Fotter-->
   <!-----------------> 
   <div data-role="footer"  data-position="fixed" style="">
       <nav data-role="navbar">
@@ -215,7 +333,6 @@
       </div>
     </div>
   </div>
-
    </div>
 
   <!-----------------> 
