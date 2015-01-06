@@ -1,5 +1,35 @@
 <!DOCTYPE html>
 <!-- http://www.w3schools.com/jquerymobile/jquerymobile_list_views.asp -->
+<!-- use https://www.youtube.com/watch?v=ZgUAT7CIhsY -->
+
+
+<!-- insert to git hub
+cd ~/public_html/SusanneEgfjord
+hashed@hashed-pc:~/public_html/SusanneEgfjord$ git init
+hashed@hashed-pc:~/public_html/SusanneEgfjord$ git add .
+hashed@hashed-pc:~/public_html/SusanneEgfjord$ git commit -m "add more pictures"
+login into github create repository:(https://www.youtube.com/watch?v=ZgUAT7CIhsY) 
+result:  https://github.com/sohrab41/SusanneEgfjord
+fetch url from github:
+hashed@hashed-pc:~/public_html/SusanneEgfjord$ git remote add origin https://github.com/sohrab41/SusanneEgfjord.git
+hashed@hashed-pc:~/public_html/SusanneEgfjord$ git push origin master
+
+
+phonepage: https://build.phonegap.com/apps/1255479/builds
+
+-->
+<!-- update to git hub
+hashed@hashed-pc:~/public_html/SusanneEgfjord$ git add .
+hashed@hashed-pc:~/public_html/SusanneEgfjord$ git commit -m "add more pictures"
+hashed@hashed-pc:~/public_html/SusanneEgfjord$ git push origin master
+Username for 'https://github.com': sohrab41
+Password for 'https://sohrab41@github.com':2lazy4x 
+To https://github.com/sohrab41/SusanneEgfjord.git
+   748a88c..5e2960f  master -> master
+hashed@hashed-pc:~/public_html/SusanneEgfjord$ 
+-->
+
+
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,9 +44,49 @@
 	</style>
 	 <script language="javascript">
             jQuery(document).ready(function($) {
-				var marginMiddle=($("#page1Image1Li").height()- $("#page1Image1").height())/4;
-				  $("#page1Image1").css('margin-top', marginMiddle);
-				  $("#page1Image1LiH1").css('margin-top',(marginMiddle*2)+"20px");
+				
+				$("#listDividerNew").css('height', "30px");
+				$("#listDividerPrevious").css('height', "30px");
+				
+				$("#page2Image1Li").css('height', "60px");
+				$("#page2Image1").css('margin-top', "5px");
+				$("#page2Image1").css('height', "50px");
+				$("#page2Image1").css('width', "50px");
+				//$("#page2Image1").css('clear', "both");
+				//$("#page2Image1LiH1").css('clear', "both");
+				//$("#page2Image1LiH1").css('margin-top', "0px");
+				
+				
+				$("#page3Image1Li").css('height', "60px");
+				$("#page3Image1").css('margin-top', "5px");
+				$("#page3Image1").css('height', "50px");
+				$("#page3Image1").css('width', "50px");
+				
+				$("#page4Image1Li").css('height', "60px");
+				$("#page4Image1").css('margin-top', "5px");
+				$("#page4Image1").css('height', "50px");
+				$("#page4Image1").css('width', "50px");
+				
+				$("#page5Image1Li").css('height', "60px");
+				$("#page5Image1").css('margin-top', "5px");
+				$("#page5Image1").css('height', "50px");
+				$("#page5Image1").css('width', "50px");
+				
+				$("#page6Image1Li").css('height', "60px");
+				$("#page6Image1").css('margin-top', "5px");
+				$("#page6Image1").css('height', "50px");
+				$("#page6Image1").css('width', "50px");
+				
+				$("#page7Image1Li").css('height', "60px");
+				$("#page7Image1").css('margin-top', "5px");
+				$("#page7Image1").css('height', "50px");
+				$("#page7Image1").css('width', "50px");
+				
+				
+				
+				//var marginMiddle=($("#page1Image1Li").height()- $("#page1Image1").height())/6;
+				//$("#page1Image1").css('margin-top', marginMiddle);
+				//$("#page1Image1LiH1").css('margin-top',(marginMiddle*2)+"20px");
 				//alert("  li: "+$("#page1Image1Li").height()+"  image: "+$("#page1Image1").height()+"   marginMiddle: "+marginMiddle);
 				});
 	</script>			
@@ -35,7 +105,7 @@
   <!-----------------> 
   <!-- Page1 Header-->
   <!-----------------> 
-  <div data-role="header" data-position="fixed" style="float:left;">
+  <div data-role="header" data-position="fixed" style="">
     <h1>Welcome To Galleri</h1>
   </div>
   <!---------------> 
@@ -43,42 +113,43 @@
   <!---------------> 
   <div data-role="main" class="ui-content" >
     <ul data-role="listview" style="" >
-	<li data-role="list-divider">New</li>	
-      <li id="page1Image1Li" >
-		   <a href="#page2" data-transition="slide" style="height:30px;">
-			<img id="page1Image1" src="http://dianick.dk/images/1.jpg" alt="alt1" style="width:40px;height:40px;"></img>  
-			<h1  id="page1Image1LiH1"> Acryl paa laerred 50 x 100 cm</h1>
+	<li id="listDividerNew" data-role="list-divider">New</li>	
+      <li id="page2Image1Li" >
+		   <a href="#page2" data-transition="slide" style="">
+			<img id="page2Image1" src="http://dianick.dk/images/1.jpg" alt="alt1" ></img>  
+			<h1  id="page2Image1LiH1"> Acryl paa laerred 50 x 100 cm</h1>
 		   </a>
       </li>
-      <li>
-		   <a href="#page3" data-transition="slide" style="position:relative; ">
-			<img id="page1Image1" src="http://dianick.dk/images/gallery/exADSC_0337xx.jpg" alt="alt1" style="width:40px;height:40px;  position:relative; float:left;  padding: 0px 10px 0px 0px;"></img>  
-			<h1  id="page1Image1LiH1"> Acryl paa laerred 60 x 100 cm</h1>
+      <li  id="page3Image1Li" >
+		   <a href="#page3" data-transition="slide" style=" ">
+			<!--img id="page1Image1" src="http://dianick.dk/images/gallery/exADSC_0337xx.jpg" alt="alt1" style="width:40px;height:40px;  position:relative; float:left;  padding: 0px 10px 0px 0px;"></img-->  
+			<img id="page3Image1" src="http://dianick.dk/images/gallery/exADSC_0337xx.jpg" alt="alt1" ></img>  
+			<h1  id="page3Image1LiH1"> Acryl paa laerred 60 x 100 cm</h1>
 		   </a>
       </li>
-      <li data-role="list-divider">previous</li>	
-      <li>
-		   <a href="#page4" data-transition="slide" style="position:relative; ">
-			<img id="page1Image1" src="http://dianick.dk/images/gallery/ADSC00629xxxx.jpg" alt="alt1" style="width:40px;height:40px;  position:relative; float:left;  padding: 0px 10px 0px 0px;"></img>  
-			<h1  id="page1Image1LiH1">Acryl paa laerred 70 x 100 cm</h1>
+      <li  id="listDividerPrevious" data-role="list-divider">previous</li>	
+      <li   id="page4Image1Li" >
+		   <a href="#page4" data-transition="slide" style=" ">
+			<img id="page4Image1" src="http://dianick.dk/images/gallery/ADSC00629xxxx.jpg" alt="alt1" ></img>  
+			<h1  id="page4Image1LiH1">Acryl paa laerred 70 x 100 cm</h1>
 		   </a>
       </li>
-      <li>
-		   <a href="#page5" data-transition="slide" style="position:relative; ">
-			<img id="page1Image1" src="http://dianick.dk/images/gallery/paint-1.jpg" alt="alt1" style="width:40px;height:40px;  position:relative; float:left;  padding: 0px 10px 0px 0px;"></img>  
-			<h1  id="page1Image1LiH1">Acryl paa laerred 80 x 100 cm</h1>
+      <li   id="page5Image1Li" >
+		   <a href="#page5" data-transition="slide" style=" ">
+			<img id="page5Image1" src="http://dianick.dk/images/gallery/paint-1.jpg" alt="alt1" ></img>  
+			<h1  id="page5Image1LiH1">Acryl paa laerred 80 x 100 cm</h1>
 		   </a>
       </li>
-      <li>
-		   <a href="#page6" data-transition="slide" style="position:relative; ">
-			<img id="page1Image1" src="http://dianick.dk/images/gallery/paint_22.jpeg" alt="alt1" style="width:40px;height:40px;  position:relative; float:left;  padding: 0px 10px 0px 0px;"></img>  
-			<h1  id="page1Image1LiH1">Acryl paa laerred 80 x 100 cm</h1>
+      <li   id="page6Image1Li" >
+		   <a href="#page6" data-transition="slide" style=" ">
+			<img id="page6Image1" src="http://dianick.dk/images/gallery/paint_22.jpeg" alt="alt1" ></img>  
+			<h1  id="page6Image1LiH1">Acryl paa laerred 80 x 100 cm</h1>
 		   </a>
       </li>
-      <li>
-		   <a href="#page7" data-transition="slide" style="position:relative; ">
-			<img id="page1Image1" src="http://dianick.dk/images/gallery/pictureOfGirl.jpeg" alt="alt1" style="width:40px;height:40px;  position:relative; float:left;  padding: 0px 10px 0px 0px;"></img>  
-			<h1  id="page1Image1LiH1">Acryl paa laerred 80 x 100 cm</h1>
+      <li   id="page7Image1Li" >
+		   <a href="#page7" data-transition="slide" style=" ">
+			<img id="page7Image1" src="http://dianick.dk/images/gallery/pictureOfGirl.jpeg" alt="alt1" ></img>  
+			<h1  id="page7Image1LiH1">Acryl paa laerred 80 x 100 cm</h1>
 		   </a>
       </li>
     </ul>
