@@ -32,10 +32,38 @@ hashed@hashed-pc:~/public_html/SusanneEgfjord$
 
 <html>
 <head>
+<meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+	<link rel="shortcut icon" href="favicon.ico" >
+	<link rel="stylesheet" href="style/pietervanos.css" />
+	<link rel="stylesheet" href="style/pietervanos.min.css" />
+	<!--link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile.structure-1.3.1.min.css" /-->
 <link rel="stylesheet" href="js/jquery.mobile-1.4.5.min.css">
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+
+    <!--script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script-->
+	<script type="text/javascript">
+		//google analytics//
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-6021558-12']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); 
+			ga.type = 'text/javascript'; 
+			ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; 
+		        s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+	
   <style>
 		 img.fullscreen{
 			 max-height: 100%;
@@ -48,6 +76,7 @@ hashed@hashed-pc:~/public_html/SusanneEgfjord$
     background-color: #b0e0e6;
 }
 	</style>
+	
 	 <script language="javascript">
             jQuery(document).ready(function($) {
 				
@@ -170,7 +199,7 @@ hashed@hashed-pc:~/public_html/SusanneEgfjord$
     <nav data-role="navbar">
 		<ul><!--data-icon  http://demos.jquerymobile.com/1.2.0/docs/buttons/buttons-icons.html -->
 			<li><a href="#newsPage"  data-icon="comment">NEWS</a></li>
-			<li><a href="#"  data-icon="user">Contact</a></li>
+			<li><a href="#contactform"  data-icon="user">Contact</a></li>
 		</ul>
 	</nav> 
   </div>
@@ -203,7 +232,7 @@ hashed@hashed-pc:~/public_html/SusanneEgfjord$
 		  <ul>
 			<li><a href="#page1"  data-icon="home">Home</a></li>
 			<li><a href="#newsPage"  data-icon="comment">NEWS</a></li>
-			<li><a href="#"   data-icon="user">Contact</a></li>
+			<li><a href="#contactform"   data-icon="user">Contact</a></li>
 		  </ul>
 	</nav> 
   </div>
@@ -235,7 +264,7 @@ hashed@hashed-pc:~/public_html/SusanneEgfjord$
 		  <ul>
 			<li><a href="#page1"  data-icon="home">Home</a></li>
 			<li><a href="#newsPage"  data-icon="comment">NEWS</a></li>
-			<li><a href="#"   data-icon="user">Contact</a></li>
+			<li><a href="#contactform"   data-icon="user">Contact</a></li>
 		  </ul>
 	</nav> 
   </div>
@@ -270,7 +299,7 @@ hashed@hashed-pc:~/public_html/SusanneEgfjord$
 		  <ul>
 			<li><a href="#page1"  data-icon="home">Home</a></li>
 			<li><a href="#newsPage"  data-icon="comment">NEWS</a></li>
-			<li><a href="#"   data-icon="user">Contact</a></li>
+			<li><a href="#contactform"   data-icon="user">Contact</a></li>
 		  </ul>
 	</nav> 
   </div>
@@ -305,7 +334,7 @@ hashed@hashed-pc:~/public_html/SusanneEgfjord$
 		  <ul>
 			<li><a href="#page1"  data-icon="home">Home</a></li>
 			<li><a href="#newsPage"  data-icon="comment">NEWS</a></li>
-			<li><a href="#"   data-icon="user">Contact</a></li>
+			<li><a href="#contactform"   data-icon="user">Contact</a></li>
 		  </ul>
 	</nav> 
   </div>
@@ -340,7 +369,7 @@ hashed@hashed-pc:~/public_html/SusanneEgfjord$
 		  <ul>
 			<li><a href="#page1"  data-icon="home">Home</a></li>
 			<li><a href="#newsPage"  data-icon="comment">NEWS</a></li>
-			<li><a href="#"   data-icon="user">Contact</a></li>
+			<li><a href="#contactform"   data-icon="user">Contact</a></li>
 		  </ul>
 	</nav> 
   </div>
@@ -375,7 +404,7 @@ hashed@hashed-pc:~/public_html/SusanneEgfjord$
 		  <ul>
 			<li><a href="#page1"  data-icon="home">Home</a></li>
 			<li><a href="#newsPage"  data-icon="comment">NEWS</a></li>
-			<li><a href="#"   data-icon="user">Contact</a></li>
+			<li><a href="#contactform"   data-icon="user">Contact</a></li>
 		  </ul>
 	</nav> 
   </div>
@@ -444,11 +473,71 @@ hashed@hashed-pc:~/public_html/SusanneEgfjord$
 		  <!--data-icon  http://demos.jquerymobile.com/1.2.0/docs/buttons/buttons-icons.html -->
 		  <ul>
 			<li><a href="#page1"  data-icon="home">Home</a></li>
-			<li><a href="#"   data-icon="user">Contact</a></li>
+			<li><a href="#contactform"   data-icon="user">Contact</a></li>
 		  </ul>
 	</nav> 
   </div>
 </div> 
+
+
+
+
+
+<!--////////////////////////////////////  contactform  /////////////////////////////////////// -->
+		<div id="contactform" data-role="page" data-theme="a">
+		<div data-role="header">
+			<h1>Contact Form</h1>
+			<a data-icon="home" data-rel="back" style="margin-top:2px;">Home</a>
+		</div>
+		<div data-role="content" data-theme="a">	
+		<form method="post" action="mail.php" data-ajax="false">
+		  Name: <input type="text" id="naam" name="naam" value="" placeholder="Name" required/><br>
+		  E-mail: <input type="email" id="mail" name="mail" value="" placeholder="E-mail" required/><br>
+		  Phone Number: <input type="tel" id="telefoon" name="telefoon" value="" placeholder="Phone"/><br>
+		  Subject: <input type="text" id="onderwerp" name="onderwerp" value="" placeholder="Subject" required/><br>
+		  Message:<br>
+		  <textarea style="height:100px;" id="bericht" name="bericht" placeholder="Enter your message here..." required></textarea> <br />
+		  <input type="submit" value="Send" name="submit" class="btn">
+		 </form>
+		</div>
+		<div data-role="footer">
+			<div class="center-image"><h4><a href="http://www.roerholmsgade.com/susanne-egfjord" data-theme="a" data-inline="true" style="color:#5F5656;" TARGET="_blank">Visit Roerholmsgade webpage </a>
+			<!--a href="http://www.pietervanos.net" class="madeby" target="_blank"><img src="pietervanos.png" class="ui-btn-right" alt="Made By Pieter" /></a></h4></div-->
+			
+		</div>
+	</div>
+<!--////////////////////////////////////  contactform  success /////////////////////////////////////// -->
+		<div id="succes" data-role="page" data-theme="a">
+		<div data-role="header">
+			<h1>Sent Succesful</h1>
+			<a data-icon="home" data-rel="back" style="margin-top:2px;">Home</a>
+		</div>
+		<div data-role="content" data-theme="a">	
+		 <p>The contact form was sent succesful!</p>
+		 </form>
+		</div>
+		<div data-role="footer" style="background:red;">
+			<div class="center-image"><h4><a href="http://www.roerholmsgade.com/susanne-egfjord" data-theme="a" data-inline="true" style="color:#5F5656;" TARGET="_blank">Visit Roerholmsgade webpage </a>
+			<!--a href="http://www.pietervanos.net" class="madeby" target="_blank"><img src="pietervanos.png" class="ui-btn-right" alt="Made By Pieter" /></a></h4></div-->
+			
+		</div>
+	</div>
+<!--////////////////////////////////////  contactform Error /////////////////////////////////////// -->
+		<div id="error" data-role="page" data-theme="a">
+		<div data-role="header">
+			<h1>Error</h1>
+			<a data-icon="home" data-rel="back" style="margin-top:2px;">Home</a>
+		</div>
+		<div data-role="content" data-theme="a">	
+			<p>The contact form was sent because of an error!</p>
+		</div>
+		<div data-role="footer">
+			<div class="center-image"><h4><a href="http://www.roerholmsgade.com/susanne-egfjord" data-theme="a" data-inline="true" style="color:#5F5656;" TARGET="_blank">Visit Roerholmsgade webpage </a>
+			<!--a href="http://www.pietervanos.net" class="madeby" target="_blank"><img src="pietervanos.png" class="ui-btn-right" alt="Made By Pieter" /></a></h4></div-->
+			
+		</div>
+	</div>
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->	
 
 
 
